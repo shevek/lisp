@@ -1,0 +1,15 @@
+build
+nbproject/private
+catalog.xml
+.*.swp
+*~
+*.log
+*.err
+cobertura.ser
+.DS_Store
+jrat.xml
+jrat.output
+*#
+.gradle
+/.nb-gradle/profiles/private/
+/.nb-gradle/private/
