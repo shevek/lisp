@@ -4,6 +4,8 @@
  */
 package org.anarres.lisp;
 
+import javax.annotation.Nonnull;
+
 /**
  * A cons cell.
  * 
@@ -24,7 +26,7 @@ public class LispCons {
     public LispCons() {
     }
 
-    public void toString(StringBuilder buf) {
+    public void toString(@Nonnull StringBuilder buf) {
         buf.append(car);
         if (cdr == null)
             return;
