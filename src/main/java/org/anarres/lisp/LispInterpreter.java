@@ -7,9 +7,8 @@ package org.anarres.lisp;
 import com.google.common.base.Throwables;
 import java.lang.reflect.Method;
 import javax.annotation.CheckForNull;
-import javax.annotation.Nonnull;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import static org.anarres.lisp.LispRuntime.*;
 
 /**
@@ -18,7 +17,7 @@ import static org.anarres.lisp.LispRuntime.*;
  */
 public class LispInterpreter {
 
-    private static final Log LOG = LogFactory.getLog(LispInterpreter.class);
+    private static final Logger LOG = LoggerFactory.getLogger(LispInterpreter.class);
 
     @CheckForNull
     public Object apply(LispCons env, Object function, Object args) {

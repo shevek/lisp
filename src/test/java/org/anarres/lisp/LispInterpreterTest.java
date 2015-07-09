@@ -4,9 +4,9 @@
  */
 package org.anarres.lisp;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.junit.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import static org.junit.Assert.*;
 
 /**
@@ -15,7 +15,7 @@ import static org.junit.Assert.*;
  */
 public class LispInterpreterTest {
 
-    private static final Log LOG = LogFactory.getLog(LispInterpreterTest.class);
+    private static final Logger LOG = LoggerFactory.getLogger(LispInterpreterTest.class);
 
     private void test(String in, Object out) throws Exception {
         LispParser parser = new LispParser(in);
